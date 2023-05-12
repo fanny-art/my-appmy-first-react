@@ -1,0 +1,107 @@
+body {
+  background-color: #161516;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.header__basket {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: right;
+}
+
+.card {
+  outline: 1px solid #D58C51;
+  padding: 43px 21px 32px;
+  width: 100%;
+  max-width: 312px;
+  display: flex;
+  flex-direction: column;
+  transition: all .3s ease-in-out;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  margin-top: 30px;
+}
+
+.card__description {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 13px 0 30px;
+}
+
+.card__control {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.card__button-add {
+  padding: 11px 12px 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: transparent;
+  line-height: 17px;
+  color: #FFFFFF;
+  font-size: 25px;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease-in-out;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.card__button-add:hover {
+  background-color: #D58C51;
+  border-color: #D58C51;
+  transform: rotate(0deg);
+}
+
+.card:hover {
+  color: #D58C51;
+}
+
+.card:hover .card__button-add {
+  background-color: #D58C51;
+  border-color: #D58C51; 
+}
+
+.products {
+  display: flex;
+  gap: 17px;
+  flex-wrap: wrap;
+}
